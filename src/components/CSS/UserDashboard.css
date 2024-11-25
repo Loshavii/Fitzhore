@@ -1,0 +1,484 @@
+/* 
+   .user-profile {
+    background: linear-gradient(to right, #1e3a8a, #4c1d95);
+    min-height: 100vh;
+    color: white;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-container input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.625rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+ 
+  
+  .welcome-section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  
+  .edit-profile-btn {
+    background-color: #22d3ee;
+    color: black;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  .account-info,
+  .profile-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .settings-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+  
+  .user-details {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    color: #a0aec0;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 2px solid #22d3ee;
+  }
+  
+  .profile-card {
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 0;
+    margin: 0 auto 1rem; 
+}
+  
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .connect-btn,
+  .message-btn {
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+  
+  .connect-btn {
+    background-color: #22d3ee;
+    color: black;
+  }
+  
+  .message-btn {
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    color: #a0aec0;
+  }
+  
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    flex: 0 0 48%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .coach-info {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .next-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #229b22;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  .next-btn:hover {
+    background-color: #1f891f;
+  }
+   */
+
+   /* Container */
+/* .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0d0d0d;
+  color: #ffffff;
+} */
+/* Container */
+.udashboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #111827; /* Page Background */
+  color: #FFFFFF; /* Primary Text */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile Section */
+.uprofile-section {
+  background: rgba(31, 41, 55, 0.5); /* Glass effect with opacity */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 280px;
+  height: 300px;
+  border-radius: 8px;
+  text-align: center;
+  color: #FFFFFF; /* Primary Text */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.uprofile-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.uprofile-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.profile-icon {
+  font-size: 60px;
+  color: #9CA3AF; /* Secondary Text */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 90px;
+}
+
+.uprofile-section h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.payment-status {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.payment-status span {
+  font-weight: bold;
+}
+
+.status-completed {
+  display: flex;
+  align-items: center;
+ 
+  background-color: #374151;
+  color: #10B981;
+  padding: 3px 6px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: 0;
+
+}
+.payment-s {
+  margin: 0; 
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.status-completed:hover {
+  background-color: #10B981; /* Primary Hover */
+  color: #FFFFFF;
+}
+
+.status-icon {
+  color: #10B981; /* Primary Accent */
+  font-size: 1.2rem;
+  
+}
+
+/* Main Dashboard */
+.main-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: rgba(31, 41, 55, 0.5); /* Secondary Background with glass effect */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.welcome-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.uprofile-btn,
+.coach-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #FFFFFF; /* Primary Text */
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.uprofile-btn {
+  background-color: #10B981; /* Primary Accent */
+}
+
+.uprofile-btn:hover {
+  background-color: #059669; /* Primary Hover */
+}
+
+.coach-btn {
+  background-color: #374151; /* Secondary Border */
+}
+
+.coach-btn:hover {
+  background-color: #5a5a5a; /* Card Hover Background */
+}
+
+/* Status Message */
+.status-message {
+  background-color: #124c40; /* Profile Status */
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.status-message h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.status-message p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: rgba(31, 41, 55, 0.5); /* Secondary Background with glass effect */
+  padding: 20px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.welcome-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.complete-profile-btn,
+.find-coach-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #FFFFFF;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.complete-profile-btn {
+  background-color: #10B981; /* Primary Accent */
+}
+
+.complete-profile-btn:hover {
+  background-color: #059669; /* Primary Hover */
+}
+
+.find-coach-btn {
+  background-color: #5a5a5a; /* Card Hover Background */
+}
+
+.find-coach-btn:hover {
+  background-color: #374151;
+}
+
