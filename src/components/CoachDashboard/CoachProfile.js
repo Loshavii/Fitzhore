@@ -29,7 +29,7 @@
 //         const coachId = sessionStorage.getItem('id'); // Fetch coach ID from session storage
 //         const token = sessionStorage.getItem('token'); // Fetch token from session storage
 //         if (coachId && token) {
-//           const response = await axios.get(`http://localhost:2003/api/coaches/coaches/${coachId}`, {
+//           const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coaches/coaches/${coachId}`, {
 //             headers: {
 //               Authorization: `Bearer ${token}`
 //             }
@@ -69,7 +69,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post('http://localhost:2003/api/coachesProfiles/profile', profile);
+//       const response = await axios.post('https://fitzhore-backend.vercel.app/api/coachesProfiles/profile', profile);
 //       console.log('Profile saved:', response.data);
 //     } catch (error) {
 //       console.error('Error saving profile:', error);
@@ -243,7 +243,7 @@ const CoachProfile = () => {
         const coachId = sessionStorage.getItem('id');
         const token = sessionStorage.getItem('token');
         if (coachId && token) {
-          const response = await axios.get(`http://localhost:2003/api/coaches/coaches/${coachId}`, {
+          const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coaches/coaches/${coachId}`, {
             headers: { Authorization: `Bearer ${token}` }
           });
           setCoach(response.data);
@@ -279,7 +279,7 @@ const CoachProfile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:2003/api/coachesProfiles/profile', profile);
+      const response = await axios.post('https://fitzhore-backend.vercel.app/api/coachesProfiles/profile', profile);
       console.log('Profile saved:', response.data);
       setIsEditing(false);
     } catch (error) {

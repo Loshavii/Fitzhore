@@ -11,7 +11,7 @@
 //     // Fetch users from the server
 //     const fetchUsers = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:2003/api/users/users');
+//         const response = await axios.get('https://fitzhore-backend.vercel.app/api/users/users');
 //         console.log(response.data); // Log the data for debugging
 //         setUsers(response.data);
 //       } catch (error) {
@@ -24,7 +24,7 @@
 //   const handleEditUser = (id) => {
 //     // Logic to edit user by id
 //     const updatedData = { /* add updated user data */ };
-//     axios.put(`http://localhost:2003/api/users/users/${id}`, updatedData)
+//     axios.put(`https://fitzhore-backend.vercel.app/api/users/users/${id}`, updatedData)
 //       .then(response => {
 //         console.log(response.data);
 //         alert('User updated successfully');
@@ -34,7 +34,7 @@
 
 //   const handleDeactivateUser = (id) => {
 //     if (window.confirm('Are you sure you want to deactivate this user?')) {
-//       axios.put(`http://localhost:2003/api/users/users/${id}/deactivate`)
+//       axios.put(`https://fitzhore-backend.vercel.app/api/users/users/${id}/deactivate`)
 //         .then(response => {
 //           console.log(response.data);
 //           setUsers(users.map(user => (user._id === id ? { ...user, status: 'Deactivated' } : user)));
@@ -108,7 +108,7 @@ const UserManagement = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:2003/api/users/users');
+        const response = await axios.get('https://fitzhore-backend.vercel.app/api/users/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
@@ -119,7 +119,7 @@ const UserManagement = () => {
 
   const handleEditUser = (id) => {
     const updatedData = { /* add updated user data */ };
-    axios.put(`http://localhost:2003/api/users/users/${id}`, updatedData)
+    axios.put(`https://fitzhore-backend.vercel.app/api/users/users/${id}`, updatedData)
       .then(response => {
         console.log(response.data);
         alert('User updated successfully');
@@ -131,7 +131,7 @@ const UserManagement = () => {
     setIsDeleting(true);
     try {
       if (window.confirm('Are you sure you want to deactivate this user?')) {
-        const response = await axios.put(`http://localhost:2003/api/users/users/${id}/deactivate`);
+        const response = await axios.put(`https://fitzhore-backend.vercel.app/api/users/users/${id}/deactivate`);
         setUsers(users.map(user => (user._id === id ? { ...user, status: 'Deactivated' } : user)));
       }
     } catch (error) {

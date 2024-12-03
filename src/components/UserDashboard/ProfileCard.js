@@ -14,7 +14,7 @@ export default function ProfileCard() {
     }
 
     try {
-      const response = await fetch(`http://localhost:2003/api/profiles/coach/${coachEmail}`);
+      const response = await fetch(`https://fitzhore-backend.vercel.app/api/profiles/coach/${coachEmail}`);
       const data = await response.json();
       setProfiles(data);
     } catch (error) {
@@ -24,7 +24,7 @@ export default function ProfileCard() {
 
   // Update profile status (Approve/Decline)
   const updateProfileStatus = async (profileId, status) => {
-    const url = `http://localhost:2003/api/profiles/${profileId}/${status === 'approved' ? 'approve' : 'decline'}`;
+    const url = `https://fitzhore-backend.vercel.app/api/profiles/${profileId}/${status === 'approved' ? 'approve' : 'decline'}`;
     try {
       await fetch(url, { method: 'PUT' });
       fetchProfiles();

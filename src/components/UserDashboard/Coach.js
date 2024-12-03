@@ -12,7 +12,7 @@
 //   useEffect(() => {
 //     const fetchCoaches = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:2003/api/coaches/coaches/approved');
+//         const response = await axios.get('https://fitzhore-backend.vercel.app/api/coaches/coaches/approved');
 //         setCoaches(response.data);
 //       } catch (error) {
 //         console.error('Error fetching coaches:', error);
@@ -318,7 +318,7 @@ const CoachFinder = () => {
   useEffect(() => {
     const fetchCoaches = async () => {
       try {
-        const response = await axios.get('http://localhost:2003/api/coaches/coaches/approved');
+        const response = await axios.get('https://fitzhore-backend.vercel.app/api/coaches/coaches/approved');
         setCoaches(response.data);
         setFilteredCoaches(response.data);
       } catch (error) {

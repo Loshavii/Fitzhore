@@ -67,7 +67,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post('http://localhost:2003/api/profiles/', formData, {
+//       const response = await axios.post('https://fitzhore-backend.vercel.app/api/profiles/', formData, {
 //         headers: {
 //           Authorization: `Bearer ${sessionStorage.getItem('token')}`, // Pass token in headers
 //         }
@@ -379,7 +379,7 @@ function ProfileSetup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:2003/api/profiles/', formData, {
+      const response = await axios.post('https://fitzhore-backend.vercel.app/api/profiles/', formData, {
         headers: {
           Authorization: `Bearer ${sessionStorage.getItem('token')}`,
         }
@@ -826,7 +826,7 @@ export default ProfileSetup;
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post('http://localhost:2003/api/profiles/', formData, {
+//       const response = await axios.post('https://fitzhore-backend.vercel.app/api/profiles/', formData, {
 //         headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` },
 //       });
 //       setMessage('Profile saved successfully!');

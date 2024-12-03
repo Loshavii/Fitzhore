@@ -47,7 +47,7 @@ const RegisterPage = () => {
 
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:2003/api/users/register', formData);
+      const response = await axios.post('https://fitzhore-backend.vercel.app/api/users/register', formData);
       setSuccessMessage('Account created successfully!');
       setErrorMessage('');
       setFormData({

@@ -11,7 +11,7 @@
 //     // Fetch pending coaches
 //     const fetchPendingCoaches = async () => {
 //       try {
-//         const response = await fetch('http://localhost:2003/api/coaches/coaches/pending');
+//         const response = await fetch('https://fitzhore-backend.vercel.app/api/coaches/coaches/pending');
 //         if (!response.ok) {
 //           throw new Error(`Error: ${response.statusText}`);
 //         }
@@ -25,7 +25,7 @@
 //     // Fetch approved coaches
 //     const fetchApprovedCoaches = async () => {
 //       try {
-//         const response = await fetch('http://localhost:2003/api/coaches/coaches/approved');
+//         const response = await fetch('https://fitzhore-backend.vercel.app/api/coaches/coaches/approved');
 //         if (!response.ok) {
 //           throw new Error(`Error: ${response.statusText}`);
 //         }
@@ -42,7 +42,7 @@
 
 //   const handleApproval = async (id, status) => {
 //     try {
-//       const response = await fetch(`http://localhost:2003/api/coaches/admin/coaches/${id}/approve`, {
+//       const response = await fetch(`https://fitzhore-backend.vercel.app/api/coaches/admin/coaches/${id}/approve`, {
 //         method: 'PUT',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -159,7 +159,7 @@ function CoachManagement() {
   useEffect(() => {
     const fetchPendingCoaches = async () => {
       try {
-        const response = await fetch('http://localhost:2003/api/coaches/coaches/pending');
+        const response = await fetch('https://fitzhore-backend.vercel.app/api/coaches/coaches/pending');
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
         const data = await response.json();
         setPendingCoaches(data);
@@ -170,7 +170,7 @@ function CoachManagement() {
 
     const fetchApprovedCoaches = async () => {
       try {
-        const response = await fetch('http://localhost:2003/api/coaches/coaches/approved');
+        const response = await fetch('https://fitzhore-backend.vercel.app/api/coaches/coaches/approved');
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
         const data = await response.json();
         setApprovedCoaches(data);
@@ -185,7 +185,7 @@ function CoachManagement() {
 
   const handleApproval = async (id, status) => {
     try {
-      const response = await fetch(`http://localhost:2003/api/coaches/admin/coaches/${id}/approve`, {
+      const response = await fetch(`https://fitzhore-backend.vercel.app/api/coaches/admin/coaches/${id}/approve`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

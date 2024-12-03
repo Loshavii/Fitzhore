@@ -6,7 +6,7 @@ const CombinedDataTable = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:2003/api/profiles/pay/combined-data')
+    fetch('https://fitzhore-backend.vercel.app/api/profiles/pay/combined-data')
       .then(response => response.json())
       .then(data => {
         setCombinedData(data);

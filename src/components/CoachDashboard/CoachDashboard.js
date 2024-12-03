@@ -15,7 +15,7 @@
 //         const coachId = sessionStorage.getItem('id');
 //         const token = sessionStorage.getItem('token');
 //         if (coachId && token) {
-//           const response = await axios.get(`http://localhost:2003/api/coaches/coaches/${coachId}`, {
+//           const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coaches/coaches/${coachId}`, {
 //             headers: {
 //               Authorization: `Bearer ${token}`
 //             }
@@ -210,7 +210,7 @@ function CoachDashboard() {
          const coachId = sessionStorage.getItem('id');
          const token = sessionStorage.getItem('token');
          if (coachId && token) {
-           const response = await axios.get(`http://localhost:2003/api/coaches/coaches/${coachId}`, {
+           const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coaches/coaches/${coachId}`, {
              headers: { Authorization: `Bearer ${token}` },
            });
            setCoach(response.data);
@@ -414,7 +414,7 @@ export default CoachDashboard;
 //         const coachId = sessionStorage.getItem('id');
 //         const token = sessionStorage.getItem('token');
 //         if (coachId && token) {
-//           const response = await axios.get(`http://localhost:2003/api/coaches/coaches/${coachId}`, {
+//           const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coaches/coaches/${coachId}`, {
 //             headers: { Authorization: `Bearer ${token}` },
 //           });
 //           setCoach(response.data);

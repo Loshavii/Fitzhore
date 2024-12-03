@@ -56,7 +56,7 @@
 
 //     try {
 //       // Create a payment intent
-//       const response = await axios.post('http://localhost:2003/api/payments/payment-intent', {
+//       const response = await axios.post('https://fitzhore-backend.vercel.app/api/payments/payment-intent', {
 //         amount,
 //         cardholderName,
 //         userId, // Send raw userId without 'id-' prefix
@@ -82,7 +82,7 @@
 //         sessionStorage.setItem('paymentStatus', paymentIntent.status);
 
 //         // Save payment details in MongoDB
-//         await axios.patch('http://localhost:2003/api/payments/update-payment-status', {
+//         await axios.patch('https://fitzhore-backend.vercel.app/api/payments/update-payment-status', {
 //           paymentIntentId: paymentIntent.id,
 //           status: 'Succeeded',
 //           userId: userId, // Use the prefixed userId
@@ -317,7 +317,7 @@ const CheckoutForm = () => {
 
     try {
       // Create payment intent
-      const response = await axios.post('http://localhost:2003/api/payments/payment-intent', {
+      const response = await axios.post('https://fitzhore-backend.vercel.app/api/payments/payment-intent', {
         amount,
         cardholderName,
         userId,
@@ -348,7 +348,7 @@ const CheckoutForm = () => {
         sessionStorage.setItem('paymentStatus', paymentIntent.status);
 
         // Update payment status in backend
-        await axios.patch('http://localhost:2003/api/payments/update-payment-status', {
+        await axios.patch('https://fitzhore-backend.vercel.app/api/payments/update-payment-status', {
           paymentIntentId: paymentIntent.id,
           status: 'Succeeded',
           userId: userId,

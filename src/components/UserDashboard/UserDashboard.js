@@ -20,7 +20,7 @@
 //         const token = sessionStorage.getItem('token');
   
 //         if (userId && token) {
-//           const userResponse = await axios.get(`http://localhost:2003/api/users/users/${userId}`, {
+//           const userResponse = await axios.get(`https://fitzhore-backend.vercel.app/api/users/users/${userId}`, {
 //             headers: {
 //               Authorization: `Bearer ${token}`
 //             }
@@ -28,7 +28,7 @@
 //           const userData = userResponse.data;
 //           setUser(userData);
   
-//           const profileResponse = await axios.get(`http://localhost:2003/api/profiles/${userData.email}`, {
+//           const profileResponse = await axios.get(`https://fitzhore-backend.vercel.app/api/profiles/${userData.email}`, {
 //             headers: {
 //               Authorization: `Bearer ${token}`
 //             }
@@ -40,7 +40,7 @@
 //             sessionStorage.setItem('contactOption', profile.contactOption);
 //           }
   
-//           const paymentResponse = await axios.get(`http://localhost:2003/api/payments/payment-get/${userId}`, {
+//           const paymentResponse = await axios.get(`https://fitzhore-backend.vercel.app/api/payments/payment-get/${userId}`, {
 //             headers: {
 //               Authorization: `Bearer ${token}`
 //             }
@@ -188,7 +188,7 @@ const Dashboard = () => {
         const token = sessionStorage.getItem('token');
   
         if (userId && token) {
-          const userResponse = await axios.get(`http://localhost:2003/api/users/users/${userId}`, {
+          const userResponse = await axios.get(`https://fitzhore-backend.vercel.app/api/users/users/${userId}`, {
             headers: {
               Authorization: `Bearer ${token}`
             }
@@ -196,7 +196,7 @@ const Dashboard = () => {
           const userData = userResponse.data;
           setUser(userData);
   
-          const profileResponse = await axios.get(`http://localhost:2003/api/profiles/${userData.email}`, {
+          const profileResponse = await axios.get(`https://fitzhore-backend.vercel.app/api/profiles/${userData.email}`, {
             headers: {
               Authorization: `Bearer ${token}`
             }
@@ -208,7 +208,7 @@ const Dashboard = () => {
           //   sessionStorage.setItem('contactOption', profile.contactOption);
           // }
   
-          const paymentResponse = await axios.get(`http://localhost:2003/api/payments/payment-get/${userId}`, {
+          const paymentResponse = await axios.get(`https://fitzhore-backend.vercel.app/api/payments/payment-get/${userId}`, {
             headers: {
               Authorization: `Bearer ${token}`
             }

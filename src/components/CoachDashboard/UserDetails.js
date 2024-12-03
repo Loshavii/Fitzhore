@@ -14,7 +14,7 @@
 //   useEffect(() => {
 //     const fetchProfiles = async () => {
 //       try {
-//         const response = await axios.get(`http://localhost:2003/api/profiles/gofor/${coachEmail}`);
+//         const response = await axios.get(`https://fitzhore-backend.vercel.app/api/profiles/gofor/${coachEmail}`);
 //         setProfiles(response.data);
 //       } catch (error) {
 //         console.error('Error fetching profiles:', error);
@@ -77,7 +77,7 @@ const CoachProfileTable = () => {
   useEffect(() => {
     const fetchProfiles = async () => {
       try {
-        const response = await axios.get(`http://localhost:2003/api/profiles/gofor/${coachEmail}`);
+        const response = await axios.get(`https://fitzhore-backend.vercel.app/api/profiles/gofor/${coachEmail}`);
         setProfiles(response.data);
       } catch (error) {
         console.error('Error fetching profiles:', error);

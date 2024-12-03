@@ -29,7 +29,7 @@ const Loginuser = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:2003/api/users/login', { email, password });
+      const response = await axios.post('https://fitzhore-backend.vercel.app/api/users/login', { email, password });
       const { token, id, role } = response.data;
 
       // Save login data to sessionStorage

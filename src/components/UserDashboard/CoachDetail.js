@@ -14,7 +14,7 @@
 //     // Fetch coach profile based on coachEmail
 //     const fetchCoachProfile = async () => {
 //       try {
-//         const response = await axios.get(`http://localhost:2003/api/coachesProfiles/profile/${coachEmail}`);
+//         const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coachesProfiles/profile/${coachEmail}`);
 //         setCoachProfile(response.data);
 //       } catch (error) {
 //         console.error('Error fetching coach profile:', error);
@@ -98,7 +98,7 @@ export default function Component() {
     // Fetch coach profile based on coachEmail
     const fetchCoachProfile = async () => {
       try {
-        const response = await axios.get(`http://localhost:2003/api/coachesProfiles/profile/${coachEmail}`);
+        const response = await axios.get(`https://fitzhore-backend.vercel.app/api/coachesProfiles/profile/${coachEmail}`);
         setCoachProfile(response.data);
       } catch (error) {
         console.error('Error fetching coach profile:', error);
